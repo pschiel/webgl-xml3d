@@ -16,6 +16,6 @@ void main(void) {
 	vec3 newpos = position;
 	float lodpow = pow(2.0, lod);
 	newpos = floor(newpos / lodpow / baseunit) * lodpow * baseunit;
-    gl_Position = modelViewProjectionMatrix * vec4(newpos, 1.0);
+	gl_Position = modelViewProjectionMatrix * vec4(newpos, 1.0);
 	fragNormal = normalize(modelViewMatrixN * newpos);
 }
