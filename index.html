@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>webgl/xml3d</title>
-        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="http://www.xml3d.org/xml3d/script/xml3d.js"></script>
-        <script type="text/javascript" src="http://www.xml3d.org/xml3d/script/tools/camera.js"></script>
-        <script type="text/javascript" src="js/script.js"></script>
-    </head>
-    <body>
+	<head>
+		<title>webgl/xml3d</title>
+		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="http://www.xml3d.org/xml3d/script/xml3d.js"></script>
+		<script type="text/javascript" src="http://www.xml3d.org/xml3d/script/tools/camera.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
 		<div>LOD: <input id="lod" type="text" value="2"/></div>
 		<div>Base unit: <input id="baseunit" type="text" value="1.0"/></div>
-        <xml3d id="xml3d" activeView="#defaultView" xmlns="http://www.xml3d.org/2009/xml3d" >
-            <shader id="testshader" script="urn:xml3d:shader:testshader">
-                <float name="lod">2</float>
-                <float name="baseunit">1.0</float>
-            </shader>
-            <view id="defaultView" position="0 0 100"></view>
-            <group shader="#testshader">
-                <mesh src="assets/teapot.json"></mesh>
-            </group>
-        </xml3d>
-    </body>
+		<xml3d id="xml3d" activeView="#defaultView" xmlns="http://www.xml3d.org/2009/xml3d" >
+			<shader id="testshader" script="urn:xml3d:shader:testshader">
+				<float name="lod">2</float>
+				<float name="baseunit">1.0</float>
+			</shader>
+			<view id="defaultView" position="0 0 100"></view>
+			<group shader="#testshader">
+				<mesh src="assets/teapot.json"></mesh>
+			</group>
+		</xml3d>
+	</body>
 </html>
