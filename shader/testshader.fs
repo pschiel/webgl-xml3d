@@ -1,5 +1,5 @@
 #ifdef GL_ES
-	precision highp float;
+    precision highp float;
 #endif
 
 uniform mat4 viewMatrix;
@@ -7,5 +7,5 @@ uniform mat4 viewMatrix;
 varying vec3 fragNormal;
 
 void main() {
-	gl_FragColor = vec4(fragNormal, 1.0);
+    gl_FragColor = vec4(fragNormal, 1.0);
 }

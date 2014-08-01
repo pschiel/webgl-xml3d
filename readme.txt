@@ -4,3 +4,5 @@
   a = new Float32Array(b)
   
 - in evaluate() wie zusätzliche daten speichern?
+
+- customAlloc indexbuffer ?
